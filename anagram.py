@@ -24,9 +24,9 @@ def find_anagram(dictionary):
         key = "".join(sorted(word))
         if len(key) >= 4:
             data[key].append(word)
-    for key, ana in data.items():
-        if len(ana) >= len(key):
-            print ", ".join(ana)
+    for key, anagram in data.items():
+        if len(anagram) >= len(key):
+            print ", ".join(anagram)
 
 
 def main():
